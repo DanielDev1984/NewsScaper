@@ -6,4 +6,4 @@ playing around with python, implementing a cmd based news scraper
 - only if really a new entry is available
 - logo idea taken / forked from https://github.com/sairash/spotify-1975
 
-![Image](ScreenshotNewsScraper.png)
+<img src="ScreenshotNewsScraper.PNG">
