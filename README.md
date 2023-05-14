@@ -1,4 +1,4 @@
-# NewsScaper
+# NewsScraper
 playing around with python, implementing a cmd based news scraper
 
 - simple web scraper for retrieving the  teaser of the latest news from rheinfelden.de using BeautifulSoup
