@@ -7,7 +7,7 @@ os.system("Cls") #clears screen
 
 
 
-#### code for the logo BEGIND
+#### code for the logo BEGIN
 # todo: try to understand the coloring in its entirety
 rainbow_colors = ['#FF0900', '#FF7F00', ' #FFEF00', '#00F11D', ' #0079FF', ' #A800FF'] #for rainbow colored prints
 
