@@ -5,11 +5,6 @@ import requests
 os.system('color')
 os.system("Cls") #clears screen
 
-# simple web scraper for retrieving the  teaser of the latest news from rheinfelden.de using BeautifulSoup
-# the ID of the latest found article is persisted on the file system to set a highlight on the last read article
-# only if really a new entry is available
-# logo idea taken / forked from https://github.com/sairash/spotify-1975
-
 page_to_scrape = requests.get("https://www.rheinfelden.de/de/aktuell/Staedtische-Nachrichten")
 soup = BeautifulSoup(page_to_scrape.text, "html.parser")
 # date of the articles
