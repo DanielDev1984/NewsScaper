@@ -12,16 +12,12 @@ os.system("Cls") #clears screen
 rainbow_colors = ['#FF0900', '#FF7F00', ' #FFEF00', '#00F11D', ' #0079FF', ' #A800FF'] #for rainbow colored prints
 
 def print_rainbow_colors_loop(string):
-	global rainbow_currently_at #global value
-	currently_in_function = 0 #change data per function call
-	for letter in string: #per letter string
-		printC(letter, color=rainbow_colors[rainbow_currently_at], end='') #print color
-		#change rainbow color
-		if currently_in_function % 2 == 0:
-			rainbow_currently_at += 1
-			if rainbow_currently_at % 6 == 0:
-				rainbow_currently_at = 0
-		currently_in_function += 1
+    global rainbow_currently_at #global value
+    currently_in_function = 0 #change data per function call
+    for letter in string: #per letter string
+        rainbow_currently_at = int(currently_in_function / 27 * 5)#todo: max string length and number of colors mustnt be magic numbers!
+        printC(letter, color=rainbow_colors[rainbow_currently_at], end='') #print color
+        currently_in_function += 1
 
 rainbow_currently_at=0 #global rainbow value
 
